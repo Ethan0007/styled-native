@@ -1,0 +1,23 @@
+{
+  "name": "styled-native-base",
+  "version": "0.1.0",
+  "description": "Styled native-base components by styled-system",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhaldkhein/styled-native-base.git"
+  },
+  "keywords": [
+    "styled",
+    "native-base"
+  ],
+  "author": "RhaldKhein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhaldkhein/styled-native-base/issues"
+  },
+  "homepage": "https://github.com/rhaldkhein/styled-native-base#readme"
+}
