@@ -2,50 +2,60 @@ import styled from 'styled-components/native'
 import { View } from './base'
 import {
   compose,
-  style,
-  flexDirection,
+
+  // Flex Parent
   alignItems,
   alignContent,
+  justifyItems,
   justifyContent,
   flexWrap,
-  width,
-  order,
+  flexDirection,
+
+  // Flex Child
+  flexGrow,
+  flexShrink,
+  flexBasis,
+  justifySelf,
   alignSelf,
-  flexBasis
+  order,
+
+  // Others
+  width,
+  layout,
+  position
 } from 'styled-system'
 
 const Flex = styled(View)(
   compose(
-    flexDirection,
     alignItems,
     alignContent,
+    justifyItems,
     justifyContent,
-    flexWrap
+    flexWrap,
+    flexDirection
   )
 )
-
 Flex.defaultProps = { flexDirection: 'row' }
-
-const flexGrow = style({
-  prop: 'flexGrow'
-})
-
-const flexShrink = style({
-  prop: 'flexShrink'
-})
 
 const Box = styled(View)(
   compose(
     flexGrow,
     flexShrink,
-    width,
-    order,
+    flexBasis,
+    justifySelf,
     alignSelf,
-    flexBasis
+    order,
+    width
   )
 )
 
+const Area = styled(View)(layout)
+const Absolute = styled(View)(position)
+Absolute.defaultProps = { position: 'absolute' }
+
 export {
   Flex,
-  Box
+  Box,
+  Area,
+  Absolute
 }

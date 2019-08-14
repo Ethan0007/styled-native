@@ -3,15 +3,17 @@ import {
   compose,
   space,
   color,
-  borders,
+  border,
   height
 } from 'styled-system'
 
 import {
   View as BaseView,
+  Button as BaseButton,
   Text as BaseText,
   Icon as BaseIcon,
-  Button as BaseButton,
+  Badge as BaseBadge,
+  Fab as BaseFab
 } from 'native-base'
 
 const styleText = compose(
@@ -22,18 +24,22 @@ const styleText = compose(
 const styleView = compose(
   space,
   color,
-  borders,
+  border,
   height
 )
 
 const View = styled(BaseView)(styleView)
+const Button = styled(BaseButton)(styleView)
 const Text = styled(BaseText)(styleText)
 const Icon = styled(BaseIcon)(styleText)
-const Button = styled(BaseButton)(styleView)
+const Badge = styled(BaseBadge)(styleText)
+const Fab = styled(BaseFab)(styleText)
 
 export {
   View,
+  Button,
   Text,
   Icon,
-  Button
+  Badge,
+  Fab
 }

@@ -1,23 +1,31 @@
 {
-  "name": "styled-native-base",
-  "version": "0.1.0",
-  "description": "Styled native-base components by styled-system",
+  "name": "styled-native",
+  "version": "0.0.1",
+  "description": "Styled native-base UI components using styled-system",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rhaldkhein/styled-native-base.git"
+    "url": "git+https://github.com/rhaldkhein/styled-native.git"
   },
   "keywords": [
     "styled",
-    "native-base"
+    "native-base",
+    "styled-system",
+    "flexbox",
+    "components",
+    "ui"
   ],
   "author": "RhaldKhein",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rhaldkhein/styled-native-base/issues"
+    "url": "https://github.com/rhaldkhein/styled-native/issues"
   },
-  "homepage": "https://github.com/rhaldkhein/styled-native-base#readme"
+  "homepage": "https://github.com/rhaldkhein/styled-native#readme",
+  "dependencies": {
+    "@styled-system/theme-get": "^5.1.0",
+    "styled-system": "^5.1.0"
+  }
 }

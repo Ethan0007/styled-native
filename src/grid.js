@@ -3,7 +3,7 @@ import {
   compose,
   space,
   color,
-  borders,
+  border,
   width,
   height
 } from 'styled-system'
@@ -17,7 +17,7 @@ import {
 const styleGrid = compose(
   space,
   color,
-  borders,
+  border,
   width,
   height
 )
@@ -25,8 +25,6 @@ const styleGrid = compose(
 const Grid = styled(BaseGrid)(styleGrid)
 const Col = styled(BaseCol)(styleGrid)
 const Row = styled(BaseRow)(styleGrid)
-
-// Col.defaultProps = { height: '100%' }
 
 export {
   Grid,
