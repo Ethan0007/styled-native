@@ -2,6 +2,7 @@ import styled from 'styled-components/native'
 import * as Base from 'native-base'
 import {
   compose,
+  typography,
   space,
   color,
   border,
@@ -10,7 +11,8 @@ import {
 
 const styleText = compose(
   space,
-  color
+  color,
+  typography
 )
 
 const styleView = compose(
