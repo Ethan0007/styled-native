@@ -6,15 +6,15 @@ import {
   TouchableOpacity,
 } from 'react-native'
 
-export default function () {
+export default function (props) {
 
   const TouchableFallback = Platform.OS === 'android'
     ? TouchableNativeFeedback
     : TouchableOpacity
 
   return (
-    <TouchableFallback onPress={this.props.onPress}>
-      {this.props.children}
+    <TouchableFallback onPress={props.onPress}>
+      {props.children}
     </TouchableFallback>
   )
 
