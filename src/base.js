@@ -1,4 +1,5 @@
 import styled from 'styled-components/native'
+import * as Base from 'native-base'
 import {
   compose,
   space,
@@ -6,15 +7,6 @@ import {
   border,
   height
 } from 'styled-system'
-
-import {
-  View as BaseView,
-  Button as BaseButton,
-  Text as BaseText,
-  Icon as BaseIcon,
-  Badge as BaseBadge,
-  Fab as BaseFab
-} from 'native-base'
 
 const styleText = compose(
   space,
@@ -28,18 +20,35 @@ const styleView = compose(
   height
 )
 
-const View = styled(BaseView)(styleView)
-const Button = styled(BaseButton)(styleView)
-const Text = styled(BaseText)(styleText)
-const Icon = styled(BaseIcon)(styleText)
-const Badge = styled(BaseBadge)(styleText)
-const Fab = styled(BaseFab)(styleText)
+const View = styled(Base.View)(styleView)
+const Button = styled(Base.Button)(styleView)
+
+const Text = styled(Base.Text)(styleText)
+const Label = styled(Base.Label)(styleText)
+const Icon = styled(Base.Icon)(styleText)
+const Badge = styled(Base.Badge)(styleText)
+const Fab = styled(Base.Fab)(styleText)
+const H1 = styled(Base.H1)(styleText)
+const H2 = styled(Base.H2)(styleText)
+const H3 = styled(Base.H3)(styleText)
+const Input = styled(Base.Input)(styleText)
 
 export {
+
   View,
   Button,
-  Text,
   Icon,
   Badge,
-  Fab
+  Fab,
+
+  // Typography
+  Text,
+  H1,
+  H2,
+  H3,
+
+  // Form
+  Label,
+  Input
+
 }
