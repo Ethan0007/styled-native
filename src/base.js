@@ -32,6 +32,7 @@ const H1 = styled(Base.H1)(styleText)
 const H2 = styled(Base.H2)(styleText)
 const H3 = styled(Base.H3)(styleText)
 const Input = styled(Base.Input)(styleText)
+const Textarea = styled(Base.Textarea)(styleText)
 
 export {
 
@@ -49,6 +50,7 @@ export {
 
   // Form
   Label,
-  Input
+  Input,
+  Textarea
 
 }

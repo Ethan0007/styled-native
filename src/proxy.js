@@ -31,10 +31,6 @@ export {
   DeckSwiper,
   Item,
   Subtitle,
-  Textarea,
-  Col,
-  Row,
-  Grid,
   TabContent,
   Toast,
   ScrollableTab,
@@ -47,4 +43,26 @@ export {
   SwipeRow,
   VueNativeBase,
   Accordion
+
+  /*
+  OVERRIDDEN
+ 
+  Col,
+  Row,
+  Grid,
+  Textarea,
+  View,
+  Button,
+  Icon,
+  Badge,
+  Fab,
+  Text,
+  H1,
+  H2,
+  H3,
+  Label,
+  Input
+  
+  */
+
 } from 'native-base'
