@@ -52,10 +52,13 @@ const Box = styled(View)(
 const Area = styled(View)(layout)
 const Absolute = styled(View)(position)
 Absolute.defaultProps = { position: 'absolute' }
+const Relative = styled(View)(position)
+Relative.defaultProps = { position: 'relative' }
 
 export {
   Flex,
   Box,
   Area,
-  Absolute
+  Absolute,
+  Relative
 }
