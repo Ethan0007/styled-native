@@ -1,5 +1,6 @@
 import styled from 'styled-components/native'
 import { View } from './base'
+import { AnimatedView } from './native'
 import {
   compose,
 
@@ -55,10 +56,21 @@ Absolute.defaultProps = { position: 'absolute' }
 const Relative = styled(View)(position)
 Relative.defaultProps = { position: 'relative' }
 
+const AnimatedArea = styled(AnimatedView)(layout)
+const AnimatedAbsolute = styled(AnimatedView)(position)
+AnimatedAbsolute.defaultProps = { position: 'absolute' }
+const AnimatedRelative = styled(AnimatedView)(position)
+AnimatedRelative.defaultProps = { position: 'relative' }
+
 export {
   Flex,
   Box,
+
   Area,
   Absolute,
-  Relative
+  Relative,
+
+  AnimatedArea,
+  AnimatedAbsolute,
+  AnimatedRelative
 }
