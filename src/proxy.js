@@ -1,4 +1,8 @@
 export {
+  Animated
+} from 'react-native'
+
+export {
   variables,
   StyleProvider,
   connectStyle,

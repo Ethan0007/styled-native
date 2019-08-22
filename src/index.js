@@ -3,6 +3,7 @@ export { themeGet } from '@styled-system/theme-get'
 export { compose, system } from 'styled-system'
 
 export * from './proxy'
+export * from './native'
 export * from './base'
 export * from './grid'
 export * from './view'
