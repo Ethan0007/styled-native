@@ -1,5 +1,10 @@
+/**
+ * Only export commonly used components
+ */
+
 export {
-  Animated
+  Animated,
+  ScrollView
 } from 'react-native'
 
 export {
