@@ -4,9 +4,10 @@ import {
   compose,
   space,
   border,
-  size,
   color,
-  typography
+  typography,
+  width,
+  height
 } from 'styled-system'
 
 const styleText = compose(
@@ -18,11 +19,17 @@ const styleText = compose(
 const styleView = compose(
   space,
   color,
-  border,
-  size
+  border
 )
 
-const Image = styled.Image(styleView)
+const styleImage = compose(
+  space,
+  border,
+  width,
+  height
+)
+
+const Image = styled.Image(styleImage)
 
 /**
  * Animated
@@ -32,7 +39,7 @@ const { ScrollView, FlatList, SectionList } = Animated
 
 const AnimatedText = styled(Animated.Text)(styleText)
 const AnimatedView = styled(Animated.View)(styleView)
-const AnimatedImage = styled(Animated.Image)(styleView)
+const AnimatedImage = styled(Animated.Image)(styleImage)
 
 export {
   Image,
