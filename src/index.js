@@ -9,3 +9,5 @@ export * from './grid'
 export * from './view'
 export * from './components'
 export * from './util'
+
+export * from './hocs'
