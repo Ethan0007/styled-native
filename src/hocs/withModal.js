@@ -38,9 +38,7 @@ export default function withModal(Child) {
             <TouchableWithoutFeedback onPress={() => state.show(false)}>
               <View opacity={0} minHeight={80} flexGrow={1} bg="black.0"></View>
             </TouchableWithoutFeedback>
-            <View bg="light.1">
-              <Child modal={state} {...props} />
-            </View>
+            <Child modal={state} {...props} />
           </Flex>
         </Modal>
         {props.children}
