@@ -1,4 +1,4 @@
-import withModal from './modal'
+import withModal from './withModal'
 
 export {
   withModal
