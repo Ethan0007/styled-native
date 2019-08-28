@@ -30,11 +30,11 @@ const styleView = compose(
 
 const View = styled(Base.View)(styleView)
 const Button = styled(Base.Button)(styleView, elevation)
+const Badge = styled(Base.Badge)(styleView)
 
 const Text = styled(Base.Text)(styleText)
 const Label = styled(Base.Label)(styleText)
 const Icon = styled(Base.Icon)(styleText)
-const Badge = styled(Base.Badge)(styleText)
 const Fab = styled(Base.Fab)(styleText)
 const H1 = styled(Base.H1)(styleText)
 const H2 = styled(Base.H2)(styleText)
