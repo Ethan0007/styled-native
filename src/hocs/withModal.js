@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import {
   Modal,
   TouchableWithoutFeedback,
@@ -22,16 +22,6 @@ export default function withModal(Child) {
       }
     })
 
-    useEffect(() => {
-      const backHandler = BackHandler.addEventListener(
-        'hardwareBackPress',
-        () => setState(state => ({ ...state, isShow: false }))
-      )
-      return () => {
-        backHandler.remove()
-      };
-    }, [])
-
     return <Context.Provider value={state}>
       <View>
         <Modal
@@ -46,6 +36,7 @@ export default function withModal(Child) {
           animationType="slide"
           transparent={true}
           visible={state.isShow}
+          onRequestClose={() => state.show(false)}
           {...props.modalProps}>
           <Flex flexDirection="column" height="100%">
             <TouchableWithoutFeedback onPress={() => state.show(false)}>
