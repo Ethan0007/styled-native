@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import {
   Modal,
   TouchableWithoutFeedback,
-  TouchableOpacity
+  TouchableOpacity,
+  BackHandler
 } from 'react-native'
 import {
   View,
@@ -13,12 +14,24 @@ export default function withModal(Child) {
   const Context = React.createContext()
 
   function CustomModal(props) {
+
     const [state, setState] = useState(() => {
       return {
         isShow: false,
         show: show => setState(state => ({ ...state, isShow: show }))
       }
     })
+
+    useEffect(() => {
+      const backHandler = BackHandler.addEventListener(
+        'hardwareBackPress',
+        () => setState(state => ({ ...state, isShow: false }))
+      )
+      return () => {
+        backHandler.remove()
+      };
+    }, [])
+
     return <Context.Provider value={state}>
       <View>
         <Modal
